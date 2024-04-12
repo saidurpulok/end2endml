@@ -7,6 +7,7 @@ def error_message_detail(error, error_detail:sys):
     error_message = "Error in script [{0}] on line [{1}], error: [{2}]".format(
         file_name, exc_tb.tb_lineno, str(error)
     )
+    logging.info(error_message)
     return error_message
 
 
